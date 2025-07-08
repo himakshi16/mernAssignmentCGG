@@ -18,7 +18,7 @@ export default function ContactForm() {
     setStatus('Sending...');
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://mernassignmentcgg-backend.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
